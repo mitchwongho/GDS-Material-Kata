@@ -9,7 +9,7 @@ This series is divided in to Katas and Kumites: _katas_ are exercises to build u
 
 1. [Kata00](https://github.com/mitchwongho/GDS-Material-Kata/wiki/Kata00---Dependencies) - Dependencies
 2. [Kata01](https://github.com/mitchwongho/GDS-Material-Kata/wiki/Kata01-Theming) - Theming: Colour and Typography
-3. Kata02 - ToolBar
+3. [Kata02](https://github.com/mitchwongho/GDS-Material-Kata/wiki/Kata02-Toolbar) - ToolBar
 4. Kata03 - RecyclerView, Cards and Ripples
 5. Kata04 - CoordinatorLayout and CollapsingToolbar
 6. Kata05 - NavigationDrawer
