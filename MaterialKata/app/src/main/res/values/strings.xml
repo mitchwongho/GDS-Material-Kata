@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+
+    <string name="menu_footer_one">One</string>
+    <string name="menu_footer_two">Two</string>
+    <string name="menu_footer_three">Three</string>
 </resources>

@@ -10,6 +10,8 @@
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <item name="colorAccent">@color/accent</item>
+        <!--   apply primary txt colour -->
+        <item name="android:textColorPrimary">@color/primary_text</item>
     </style>
     
     <style name="AppTheme.TextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
