@@ -1,8 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!-- appcompat theme attributes aren't prepended with 'android:' -->
+        <!--   your app branding colour for the app bar -->
+        <item name="colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent</item>
+    </style>
+    
+    <style name="AppTheme.TextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:fontFamily">sans-serif-thin</item> <!-- Roboto typeface -->
     </style>
 
 </resources>
