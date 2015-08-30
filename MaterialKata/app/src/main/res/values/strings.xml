@@ -8,4 +8,14 @@
     <string name="menu_footer_one">One</string>
     <string name="menu_footer_two">Two</string>
     <string name="menu_footer_three">Three</string>
+
+    <array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </array>
 </resources>
