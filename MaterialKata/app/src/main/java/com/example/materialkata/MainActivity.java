@@ -1,14 +1,21 @@
 package com.example.materialkata;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private int mutedColour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +36,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
+
+        // Generate palette
+        final CollapsingToolbarLayout ctb = (CollapsingToolbarLayout)findViewById(R.id.collapsing_toolbar);
+        final Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.image);
+        Palette.from(bmp).generate(new Palette.PaletteAsyncListener() {
+            @Override
+            public void onGenerated(final Palette palette) {
+                mutedColour = palette.getMutedColor(R.attr.colorPrimary);
+                ctb.setContentScrimColor(mutedColour);
+                footerToolbar.setBackgroundColor(mutedColour);
+            }
+        });
     }
 
     @Override
