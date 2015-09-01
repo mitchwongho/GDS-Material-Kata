@@ -3,6 +3,9 @@ package com.example.materialkata;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.graphics.Palette;
@@ -11,11 +14,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
     private int mutedColour;
+    private NavigationView navdrawer;
+    private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,31 @@ public class MainActivity extends AppCompatActivity {
                 footerToolbar.setBackgroundColor(mutedColour);
             }
         });
+
+        // Apply navigation click-events
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
+        navdrawer = (NavigationView)findViewById(R.id.nav_drawer);
+
+        headerToolbar.setNavigationIcon(R.mipmap.ic_menu_24dp);
+        headerToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // open drawer
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+        //
+        // onItemSelected
+        navdrawer.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(final MenuItem menuItem) {
+                menuItem.setChecked(true);
+                // TODO handle navigation
+                drawerLayout.closeDrawers();
+                return true;
+            }
+        });
+
     }
 
     @Override

@@ -4,10 +4,18 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
 
-    <string name="menu_footer_one">One</string>
-    <string name="menu_footer_two">Two</string>
-    <string name="menu_footer_three">Three</string>
+
+    <string name="menu_nav_one">@string/one</string>
+    <string name="menu_nav_two">@string/two</string>
+    <string name="menu_nav_three">@string/three</string>
+
+    <string name="menu_footer_one">@string/one</string>
+    <string name="menu_footer_two">@string/two</string>
+    <string name="menu_footer_three">@string/three</string>
 
     <array name="days_of_week">
         <item>Monday</item>
