@@ -3,7 +3,9 @@ package com.example.materialkata;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -75,6 +77,15 @@ public class MainActivity extends AppCompatActivity {
                 // TODO handle navigation
                 drawerLayout.closeDrawers();
                 return true;
+            }
+        });
+        //
+        // FAB
+        final FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, R.string.salutations, Snackbar.LENGTH_LONG).show();
             }
         });
 

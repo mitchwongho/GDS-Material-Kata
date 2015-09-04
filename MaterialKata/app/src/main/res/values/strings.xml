@@ -17,6 +17,8 @@
     <string name="menu_footer_two">@string/two</string>
     <string name="menu_footer_three">@string/three</string>
 
+    <string name="salutations">Congratulation! You\'re FAB</string>
+
     <array name="days_of_week">
         <item>Monday</item>
         <item>Tuesday</item>

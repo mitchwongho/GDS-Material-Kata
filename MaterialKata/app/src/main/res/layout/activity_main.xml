@@ -69,6 +69,18 @@
                 android:paddingTop="@dimen/normal_padding"
                 android:scrollbars="vertical"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <!-- FAB -->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/large_padding"
+                android:layout_marginRight="@dimen/large_padding"
+                android:layout_above="@+id/footer_toolbar"
+                android:layout_gravity="right|bottom"
+                android:tint="@android:color/white"
+                android:src="@android:drawable/ic_input_add"/>
+
         </android.support.design.widget.CoordinatorLayout>
 
         <!-- Footer Toolbar -->
