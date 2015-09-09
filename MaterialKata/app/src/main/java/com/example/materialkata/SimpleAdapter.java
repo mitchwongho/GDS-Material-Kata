@@ -10,17 +10,9 @@ import android.widget.TextView;
 /**
  *
  */
-public final class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.ViewHolder>{
+public final class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.ViewHolder> {
 
     private String[] titles;
-
-    public static class ViewHolder extends RecyclerView.ViewHolder{
-        TextView title;
-        public ViewHolder(View v) {
-            super(v);
-            title = (TextView)v.findViewById(R.id.card_title);
-        }
-    }
 
     public SimpleAdapter(final String[] titles) {
         this.titles = titles;
@@ -86,5 +78,14 @@ public final class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.View
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.title.setText(titles[position]);
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView title;
+
+        public ViewHolder(View v) {
+            super(v);
+            title = (TextView) v.findViewById(R.id.card_title);
+        }
     }
 }

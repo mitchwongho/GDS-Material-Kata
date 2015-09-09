@@ -13,13 +13,12 @@
     android:layout_marginBottom="@dimen/normal_padding"
     card_view:contentPadding="@dimen/normal_padding"
     android:clickable="true"
-    android:foreground="?attr/selectableItemBackground">
+    android:foreground="?attr/selectableItemBackground"
+    android:stateListAnimator="@anim/anim_card_lift">
     <TextView
         android:id="@+id/card_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/AppTheme.TextAppearance.Medium"
         tools:text="Title text"/>
-
-
 </android.support.v7.widget.CardView>
