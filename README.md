@@ -14,7 +14,7 @@ This series is divided in to Katas and Kumites: _katas_ are exercises to build u
 
 ## Kumites
 
-1. Kumite01 - Card animation
+1. [Kumite01](https://github.com/mitchwongho/GDS-Material-Kata/wiki/Kumite01-Card-animation) - Card animation
 2. Kumite02 - RecyclerView Item Selection
 3. Kumite03 - NavigationDrawer Item Selection
 4. Kumite04 - Adding Cards
